@@ -1,6 +1,4 @@
-(ns soda-clj.schemas
-  (:require [malli.core :as m]
-            [malli.error :as me]))
+(ns soda-clj.schemas)
 
 (def CreateTimer
   [:map

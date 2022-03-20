@@ -15,7 +15,6 @@
             id (:timers/id timer)
             completed-at (c/to-sql-time (t/now))]
         (is (= (:timers/completed_at (complete-timer tx :id id :completed-at completed-at)) completed-at))))))
-        
 
 (deftest create-timer-test
   (testing "timer create"
